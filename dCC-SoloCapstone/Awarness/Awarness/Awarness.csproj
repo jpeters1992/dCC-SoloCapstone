@@ -246,6 +246,8 @@
     <Content Include="Views\RegisteredUsers\Create.cshtml" />
     <Content Include="Views\RegisteredUsers\Delete.cshtml" />
     <Content Include="Views\RegisteredUsers\Edit.cshtml" />
+    <Content Include="Views\RegisteredUsers\Details.cshtml" />
+    <Content Include="Views\RegisteredUsers\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
