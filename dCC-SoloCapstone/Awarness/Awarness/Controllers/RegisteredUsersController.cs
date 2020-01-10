@@ -19,13 +19,13 @@ namespace Awarness.Controllers
         // GET: RegisteredUsers
         public ActionResult Index()
         {
-            return View();
+            return View("Index");
         }
 
         // GET: RegisteredUsers/Details/5
         public ActionResult Details(int RegisteredUserId)
         {
-            return View();
+            return View("Details");
         }
 
         // GET: RegisteredUsers/Create
@@ -55,13 +55,13 @@ namespace Awarness.Controllers
         // GET: RegisteredUsers/Edit/5
         public ActionResult Edit(int RegisteredUserId)
         {
-            return View();
+            return View("Edit");
         }
 
         // POST: RegisteredUsers/Edit/5
         [HttpPost]
         public ActionResult Edit(int RegisteredUserId, FormCollection collection)
-        {
+        {  
             try
             {
                 // TODO: Add update logic here
@@ -73,27 +73,11 @@ namespace Awarness.Controllers
                 return View();
             }
         }
-
-        // GET: RegisteredUsers/Delete/5
-        public ActionResult Delete(int RegisteredUserId)
+        public ActionResult CrimeVisual()
         {
+            ViewBag.Message = "Display Crime Data";
+
             return View();
-        }
-
-        // POST: RegisteredUsers/Delete/5
-        [HttpPost]
-        public ActionResult Delete(int RegisteredUserId, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add delete logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
         }
     }
 }
