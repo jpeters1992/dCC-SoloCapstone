@@ -1,10 +1,15 @@
 ﻿@model Awarness.Models.Incident
 
+@{
+    ViewBag.Title = "Create";
+}
 
-@using (Html.BeginForm()) 
+<h2>Create</h2>
+
+@using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
         <h4>Incident</h4>
         <hr />

@@ -1,5 +1,11 @@
 ﻿@model Awarness.Models.Incident
 
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
 <h3>Are you sure you want to delete this?</h3>
 <div>
     <h4>Incident</h4>
@@ -47,7 +53,8 @@
 
     </dl>
 
-    @using (Html.BeginForm()) {
+    @using (Html.BeginForm())
+    {
         @Html.AntiForgeryToken()
 
         <div class="form-actions no-color">
