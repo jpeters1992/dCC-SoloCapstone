@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Awarness.Models.Incident>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IncidentTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IncidentDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IncidentType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IncidentLocation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AdditionalDetails)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IncidentTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IncidentDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IncidentType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IncidentLocation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AdditionalDetails)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IncidentReferenceNumber }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IncidentReferenceNumber }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IncidentReferenceNumber })
+        </td>
+    </tr>
+}
+
+</table>
