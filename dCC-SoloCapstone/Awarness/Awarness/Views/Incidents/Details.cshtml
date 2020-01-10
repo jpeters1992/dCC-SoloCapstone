@@ -1,0 +1,52 @@
+﻿@model Awarness.Models.Incident
+
+<div>
+    <h4>Incident</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IncidentTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IncidentTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IncidentDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IncidentDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IncidentType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IncidentType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IncidentLocation)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IncidentLocation)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AdditionalDetails)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AdditionalDetails)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IncidentReferenceNumber }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

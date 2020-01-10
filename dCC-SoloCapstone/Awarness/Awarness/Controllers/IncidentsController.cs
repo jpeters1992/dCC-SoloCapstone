@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Awarness.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -8,6 +9,13 @@ namespace Awarness.Controllers
 {
     public class IncidentsController : Controller
     {
+        ApplicationDbContext context;
+
+        public IncidentsController()
+        {
+            context = new ApplicationDbContext();
+        }
+
         // GET: Incidents
         public ActionResult Index()
         {

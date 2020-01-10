@@ -73,6 +73,7 @@ namespace Awarness.Controllers
                 return View();
             }
         }
+
         public ActionResult CrimeVisual()
         {
             ViewBag.Message = "Display Crime Data";

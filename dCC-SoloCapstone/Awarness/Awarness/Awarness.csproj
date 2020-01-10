@@ -247,10 +247,13 @@
     <Content Include="Views\RegisteredUsers\Edit.cshtml" />
     <Content Include="Views\RegisteredUsers\Details.cshtml" />
     <Content Include="Views\RegisteredUsers\CrimeVisual.cshtml" />
+    <Content Include="Views\Incidents\Create.cshtml" />
+    <Content Include="Views\Incidents\Delete.cshtml" />
+    <Content Include="Views\Incidents\Details.cshtml" />
+    <Content Include="Views\Incidents\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Incidents\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
